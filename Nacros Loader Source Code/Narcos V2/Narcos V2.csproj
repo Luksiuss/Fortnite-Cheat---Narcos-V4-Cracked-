@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{B37752C5-A000-4558-B546-495656C58986}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Narcos V2</RootNamespace>
+    <AssemblyName>Narcos V2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Narcos V2.ico</ApplicationIcon>
+    <StartupObject>᫐.ᮄ</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.DebuggerVisualizers" />
+    <Reference Include="Siticone.UI" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OrangeHeapAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="᪛\᪚.cs" />
+    <Compile Include="᪛\᪣\᪢.cs" />
+    <Compile Include="᪛\᪣\᪢.Designer.cs">
+      <DependentUpon>᪢.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="᪛\᪣\ᮅ.cs" />
+    <Compile Include="᫐\᫏.cs" />
+    <Compile Include="᫐\᫜.cs" />
+    <Compile Include="᫐\᫿.cs" />
+    <Compile Include="᫐\ᬎ.cs" />
+    <Compile Include="᫐\᭕.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="᫐\᭕.Designer.cs">
+      <DependentUpon>᭕.cs</DependentUpon>
+    </Compile>
+    <Compile Include="᫐\᭾.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="᫐\᭾.Designer.cs">
+      <DependentUpon>᭾.cs</DependentUpon>
+    </Compile>
+    <Compile Include="᫐\ᮄ.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="᪛\᪣\ᮅ.resources" />
+    <EmbeddedResource Include="᫐\᭕.resources" />
+    <EmbeddedResource Include="᫐\᭾.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="᪛\᪣\᪢.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>᪢.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
